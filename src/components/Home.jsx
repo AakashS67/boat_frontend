@@ -23,7 +23,7 @@ const Home = () => {
 
 
  const getEarphone = async () => {
-        await axios.get('http://localhost:8000/getearphone')
+        await axios.get('https://boat-backend-wim9.onrender.com/getearphone')
         // .then((res)=>console.log(res))
             .then((res) => setData(res.data))
             .catch(err => console.log(err))

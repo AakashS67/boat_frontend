@@ -9,7 +9,7 @@ const Earphone = () => {
     const [qty, setQty] = useState(0)
 
     const getData = () => {
-        axios.get('http://localhost:8000/getearphone')
+        axios.get('https://boat-backend-wim9.onrender.com/getearphone')
             .then((res) => setEarphoneData(res.data))
             .catch((err) => console.log(err))
     }
@@ -95,5 +95,6 @@ const Earphone = () => {
         </>
     )
 }
+
 
 export default Earphone
