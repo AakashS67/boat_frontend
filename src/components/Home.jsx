@@ -103,7 +103,7 @@ const Home = () => {
 
                     </div>
                 </div>
-        
+{/*         
                 {
                 earphonedata.map((item,key) => (
                     <div key={key}>
@@ -112,7 +112,7 @@ const Home = () => {
                        <img className="img-fluid" src={item.product_image} alt="" style={{width:"200px",height:"250px"}}/>
                     </div>
                 ))
-            }
+            } */}
             </div>
         
         </>
