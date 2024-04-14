@@ -1,21 +1,17 @@
 import './App.css';
-import Home from "./components/Home"
 import Navbar from "./components/Navbar"
-import AllRoute from './components/AllRoute';
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import AllRoute from './routes/AllRoute';
 import Banner from './components/Banner';
-import Earphone from './components/Earphone';
+import Navigation from './customer/components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='App'>
-      <BrowserRouter> 
+    <div className=''>
       <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/categories/earphone" element = {<Earphone />}/>
-        </Routes>
-      </BrowserRouter>
+      {/* <Navigation/> */}
+      <AllRoute/>
+      <Footer/>
       {/* <AllRoute /> */}
     </div>
   );
