@@ -6,20 +6,17 @@ import Logo from "./Logo";
 
 const Navbar = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid shadow-sm">
             <div className="row">
                 <div className="col bg-light p-2 text-center" style={{ fontFamily: "monospace", fontSize: "12px" }}>
                     Playback: 150 Hrs | Sound: Sublime | Price: ₹1199 ₹1499 | Shop Rockerz Trinity using: TAKE300
                 </div>
-                <div className="row  flex items-center justify-between">
+                <div className="row">
                     <div className="col">
                         <nav className="navbar navbar-expand-lg">
-                            <div className="container-fluid">
-
+                            <div className="container-fluid ">
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenav"><span className="navbar-toggler-icon"></span></button>
-
-                                <Logo w={100} h={60} />                               {/* <Link to="/"><img className="w-50" src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434" alt="boat" /></Link>
-                                */}
+                           <Link to="/"><Logo w={100} h={60} /></Link>
                                 <div className="collapse navbar-collapse" id="collapsenav">
                                     <ul className="navbar-nav">
                                         <li className="nav-item dropdown"><NavLink className="dropdown-toggle nav-link ms-5" role="button" to="/categories" data-bs-toggle="dropdown">Categories</NavLink>
@@ -39,28 +36,30 @@ const Navbar = () => {
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4 ms-4">
-                                    <div className="text-xl cursor-pointer">
-                                        <Link to="/login" className="text-dark"><FaRegUser className="" /></Link>
-                                    </div>
-                                    <div className="text-xl relative">
-                                        <Link to="/cart" className="text-dark">
-                                            <span><FaShoppingBag className="hover:shadow-md" /></span>
-                                        </Link>
+                                    <div className="text-xl text-dark cursor-pointer">
+                                        <FaRegUser  />
+                                </div>
+                                <div className="text-xl relative">
+                                    <Link to="/cart" className="text-dark">
+                                        <span><FaShoppingBag className="hover:shadow-md" /></span>
+                                    </Link>
 
-                                            <div className="bg-red-500 text-white w-4 h-4 rounded-full flex items-center justify-center absolute -top-1 -right-2">
-                                                <p className="text-sm pt-3">0</p>
-                                            </div> 
-                                    </div>
-                                    <div>
-                                        <button className="btn btn-dark"> Login</button>
+                                    <div className="bg-red-500 text-white w-4 h-4 rounded-full flex items-center justify-center absolute -top-1 -right-2">
+                                        <p className="text-sm pt-3">0</p>
                                     </div>
                                 </div>
+                                <div>
+                                    <Link to="/login">
+                                        <button className="btn btn-dark"> Login</button>
+                                    </Link>
+                                </div>
                             </div>
-                        </nav>
                     </div>
-                </div>
+                </nav>
             </div>
         </div>
+            </div >
+        </div >
     )
 }
 
