@@ -7,11 +7,11 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className=''>
+    <div className="overflow-hidden">
       <Navbar />
       {/* <Navigation/> */}
-      <AllRoute/>
-      <Footer/>
+      <main> <AllRoute /></main>
+      <Footer />
       {/* <AllRoute /> */}
     </div>
   );
